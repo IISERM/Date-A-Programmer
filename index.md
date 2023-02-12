@@ -1,149 +1,55 @@
 # Vision
 
-The aim of this hackathon is to come up with algorithms to solve problems in biology and bio-computation. The organizers feel that programming is in everyone's blood, for we are inherently algorithmic. Hence, the questions do **not** expect that you know some fancy set of functions to solve these problems. They just need you to think about how you would go about doing something.
-
-Most of the questions are **not** inherently biological in nature. Biology however does provide motivation to solve these problems.
+This is a Valentine's day themed event with questions based on the theme of love and romance.
 
 Feel free to contact the organizers if you need additional information.
 
 # [Click here for Rules](./rules)
 
-# [Click here for Results](./2022/results.md)
 
 # Questions
 
-## Question 1[20 Marks]
+## Question 1) Love Calculator [20 Marks]
 
-Dr. Charles Adami and Dr. Chris Ofria are building a software platform for simulating evolution. The first step is to simulate DNA replication and mutation over generations. DNA often fails to copy accurately and the following are the 3 main types of mutations it undergoes-
-
-1. Base Substitution &rarr; Substitution of a base by a different one.
-2. Insertion &rarr; Insertion of a new base.
-3. Deletion &rarr; Deletion of an existing base.
-
-The probability of these mutation is different. The lab has decided to store DNA sequences in a [FASTA](https://en.wikipedia.org/wiki/FASTA_format) file. Your job as an intern in their lab is to create a function that takes the path of a fasta file, the probabilities of these 3 types of mutations, and the number of generations and simulate DNA replication over the given number of generations. The final output is the evolved DNA sequence. The function should also print the total number of mutations and the difference in the length of the final DNA strand and the initial one. You can use this [fasta file](./seq.fasta) for testing the code.
+You have to build a love calculator. The calculator works in the following manner- it takes the name of 2 partners and converts their name to ASCII and then converts the ASCII to binary. The calculator claims this percentage to be the percentage of love between the 2 programmers.
 
 ### Input
 
-`FASTA file path`, `Probability of substitution`, `Probability of Insertion`, `Probability of Deletion`, `Number of Generations`
+`Name of partner A`, `Name of partner B`
 
 ### Output
 
-1. Final DNA strand after evolution
-2. Total number of mutations
-3. Difference in the length of the final DNA strand and the initial one
+The percentage of love between them. And a short lovely message for them.
 
 
-## Question 2[40 Marks]
+## Question 2) Draw a heart [40 Marks]
 
-A set of 5 islands have been recently discovered in the Pacific Ocean. The islands have remained untouched for long, as a result,  there lies a great bounty of flora and fauna as well as some undiscovered species of birds and animals. Dr. Peter Prasad and Dr. Rosemary Jain, who take an introductory course in Evolutionary Biology at the Pacific Institute of Evolutionary Science, Education and Research, had decided to send a bunch of 50 students, 10 each to these islands for studying the diversity of birds there. 
+Draw a heart using just the character `*`. Take an input `n` from the user, which is a measure of the size of the heart, say, the number of rows. You are free to decide how you do it, whether you draw a filled one, or a hollow one. The following is an example-
 
-During their tiring semesters, the students have **diligently and honestly** gone birding everyday and collated their data weekly. They caught birds and banded their legs to ensure that birds are not double counted. After a tiresome work of 3 months, the students have sent all their data in excel files to the instructors. Your job, as an honorary TA of the course and the chief data analyst of their lab, is to analyze this data and study the bird diversity of these islands.
+```
+For n = 8
 
-The first step in studying biodiversity is to check if the data is complete. In order to make a statement about the species diversity of a region, a data analyst needs to make sure that most of the unique species in a region have been discovered. In order to do that, the analyst first needs to plot a species accumulation curve and check if it reaches saturation. A species accumulation curve is a plot between the cumulative number of species and the sampling effort(number of weeks in this case). Here's an example of 2 species accumulation curves, one of them reaching saturation-
-
-![SpeciesAccumulationCurve](./SpeciesAccumulationCurve.jpg)
-
-If a species accumulation curve does reach saturation, the next step is to calculate the diversity index. The **Shannon-Weiner index** is a good measure of the [alpha-diversity](https://en.wikipedia.org/wiki/Alpha_diversity) of an island. It's given by-
-
-$$
-H=-\sum\limits_{i} p_i\ln p_i
-$$
-
-where $$p_i$$ is the proportional abundance of a given species.
-
-
-In order to compare the diversity of different islands, one can use **Sorensen's coefficient of similarity**. which is a good indicator of **beta-diversity**. It's given by-
-
-$$
-C_s = \frac{2a}{2a+b+c}\\
-a = \text{Number of species common between site 1 and 2}\\
-b = \text{Number of species unique to site 1}\\
-c = \text{Number of species unique to site 2}\\
-$$
-
-Find the Sorensen's coefficient for all the combinations of the islands where species accumulation curve has attained saturation. 
-
-[Here](./BirdData.zip) is the data collected by the students.
+  *   *   *   *   
+*       *       * 
+*               * 
+*              * 
+  *           *   
+    *       *     
+      *   *       
+        *
+```
 
 ### Input
 
-The excel sheets containing the data collated by the students.
+`n`
 
 ### Output
 
-1. Species Accumulation Curves for each island.
-2. Shannon-Weiner Diversity index of each island where species accumulation curve has attained saturation.
-3. Sorensen's coefficient between each island where species accumulation curve has attained saturation.
+A heart printed on screen
 
 
-## Question 3[60 Marks]
+## Question 3)  [100 Marks]
 
-It is well known that multiple codons in RNA can code for the same amino acid. And, given an RNA sequence, it's easy to find the corresponding amino acid chain. However, the reverse is not so trivial. Given an amino acid chain, there are multiple RNA sequences that code for it.
-
-You are applying for an internship in computational biology. Your prospective PI wants to gauge your algorithmic and computational skills. So, he has asked you to find all the RNA sequences that can code for a given amino acid sequence.
-
-You can use the following amino acid sequence(hypothetical) for testing your code-
-`His-Gln-Tyr-Phe-Lys`
-
-This would be helpful-
-
-![CodonAcidMap](./CodonRnaMap.jpeg)
-
-**Note:** Ignore start and stop codons.
-
-
-### Input
-
-Amino acid sequence
-
-### Output
-
-All possible RNA sequences that code for the given amino acid sequence.
-
-
-## Question 4[100 Marks]
-
-Fascinated by [Conway's Game of life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life), a mathematical biologist, who believes that **"Life is a difficult proposition"** has decided to make life more complicated. Here are the rules of his game-
-
-Each cell in an $$2N\times 2N$$ grid is in one of the 2 possible states, live(1) or dead(0). Each cell interacts with it's 8 neighbours and it's own state after the interaction is given by a rule which is different in different parts of the grid. He divides the grid into 4 parts and follows the rules given below-
-
-* Upper Left Half &rarr; $$E_{final}=\left\{
-	\begin{array}{ll}
-		0 & \mbox{if } \text{all eight neighbors are 1} \\
-		1 & \mbox{if all eight neighbors are 0} \\
-        A.B.C + D.E.F + G.H.I + B.C & \mbox{otherwise}
-	\end{array}
-\right.$$
-
-* Upper Right Half &rarr; $$E_{final}=\left\{
-	\begin{array}{ll}
-		0 & \mbox{if } \text{all eight neighbors are 1} \\
-		1 & \mbox{if all eight neighbors are 0} \\
-        A.B.C + D.E.F + G.H.I + E.F & \mbox{otherwise}
-	\end{array}
-\right.$$
-
-* Lower Left Half &rarr; $$E_{final}=\left\{
-	\begin{array}{ll}
-		0 & \mbox{if } \text{all eight neighbors are 1} \\
-		1 & \mbox{if all eight neighbors are 0} \\
-        A.B.C + D.E.F + G.H.I + H.I & \mbox{otherwise}
-	\end{array}
-\right.$$
-
-* Lower Right Half &rarr; $$E_{final}=\left\{
-	\begin{array}{ll}
-		0 & \mbox{if } \text{all eight neighbors are 1} \\
-		1 & \mbox{if all eight neighbors are 0} \\
-        A.B.C + D.E.F + G.H.I + A.C & \mbox{otherwise}
-	\end{array}
-\right.$$
-
-Here, the operations involved are binary addition and multiplication and the labels A to I have been given as per the following scheme-
-
-![Scheme](./grid.png)
-
-Further, in an "iteration", the number of cells interacting with their neighbors is a radom integer between $$2N$$ and $$N^2$$. These are picked randomly and every interaction can potentially change the grid for the next interaction within the same iteration. Assume that the boundaries are periodic. Your job is to apply these rules on [this](./darwin.png) image for 420 iterations.
 
 ### Input
 
@@ -152,6 +58,16 @@ A given image.
 ### Output
 
 An image showing the final state after 420 iterations.
+
+
+## Question 4) Secret Love Messages [60 Marks]
+
+Your parents check your phone very frequently. They don't you are dating someone. So, you have come up with a way to encrypt and decrypt the messages you send to your loved one. Here's the proposed scheme that you have to implement-
+
+Write a function `encrypt(message, key)` that takes a message and a key, which is an integer. It uses this key as a seed and uses a randomizing function in the language of your choice to shuffle the characters in the message. The function returns the encrypted message.
+
+Write a function `decrypt(encrypted_message, key)` that takes the encrypted message and the same key and decrypts the message and returns the decrypted message.
+
 
 
 ## Question 5[100 Marks]
