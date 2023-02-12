@@ -1,5 +1,9 @@
 This is a Valentine's day themed event with questions based on the theme of love and romance.
 
+<p align="center">
+  <img src="poster.jpeg" class="poster"/>
+</p>
+
 # [Click here for Rules](./rules)
 
 
@@ -7,6 +11,7 @@ This is a Valentine's day themed event with questions based on the theme of love
 
 You task is to take a date from the user that lies in the Valentine's week and return the name of the day that falls on it. The following are the allowed date formats-
 
+```
 07/02/2023
 07-02-2023
 7-2-2023
@@ -16,6 +21,7 @@ You task is to take a date from the user that lies in the Valentine's week and r
 7 Feb
 7th February
 7 February
+```
 
 Print `invalid` if the date doesn't life in the Valentine's week. By now, you are supposed to know what day falls on what date.
 
@@ -27,8 +33,6 @@ Print `invalid` if the date doesn't life in the Valentine's week. By now, you ar
 
 Rose Day
 
-
-# Questions
 
 ## Question 2) Love Calculator [30 Marks]
 
