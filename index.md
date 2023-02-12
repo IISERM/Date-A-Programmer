@@ -1,6 +1,5 @@
-This is a Valentine's day themed event with questions based on the theme of love and romance.
-
 <p align="center">
+  Let's indulge our hearts into the sea of love and romance!
   <img src="poster.jpeg" class="poster"/>
 </p>
 
