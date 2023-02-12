@@ -1,14 +1,21 @@
+<style>
+  .poster {
+    max-height: 100vh;
+  }
+</style>
+
 <p align="center">
-  Let's indulge our hearts into the sea of love and romance!
+  <b>Let's indulge our hearts into the sea of love and romance!</b><br><br>
   <img src="poster.jpeg" class="poster"/>
 </p>
 
-# [Click here for Rules](./rules)
+# [♥ Click here for Rules ♥](./rules)
 
+<hr color="black">
 
 ## Question 1) Valentine's week  [20 Marks]
 
-You task is to take a date from the user that lies in the Valentine's week and return the name of the day that falls on it. The following are the allowed date formats-
+You task is to take a date from the user that lies in the Valentine's week and return the name of the day that falls on it. The following are the anticipated date formats-
 
 ```
 07/02/2023
@@ -32,6 +39,7 @@ Print `invalid` if the date doesn't life in the Valentine's week. By now, you ar
 
 Rose Day
 
+<hr color="black">
 
 ## Question 2) Love Calculator [30 Marks]
 
@@ -54,6 +62,7 @@ You now have a job in the same company and you need to build this model which ta
 
 The percentage of love between them. And a short lovely message for them.
 
+<hr color="black">
 
 ## Question 3) Draw a heart [40 Marks]
 
@@ -80,6 +89,7 @@ For n = 8
 
 A heart printed on screen
 
+<hr color="black">
 
 ## Question 4) Secret Love Messages [40 Marks]
 
@@ -90,6 +100,7 @@ Write a function `encrypt(message, key)` that takes a message and a key, which i
 Write a function `decrypt(encrypted_message, key)` that takes the encrypted message and the same key and decrypts the message and returns the decrypted message.
 
 
+<hr color="black">
 
 ## Question 5) Movie Matching [60 Marks]
 
@@ -103,6 +114,7 @@ Rating of movie genres by both partners.
 
 Compatibility
 
+<hr color="black">
 
 ## Bonus Question) Love Necklace [Not counted in the final scoring.]
 
