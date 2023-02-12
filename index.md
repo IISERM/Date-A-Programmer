@@ -36,7 +36,16 @@ Rose Day
 
 ## Question 2) Love Calculator [30 Marks]
 
-You have to build a love calculator. The calculator works in the following manner- it takes the name of 2 partners and converts their name to ASCII and then converts the ASCII to binary. The calculator claims this percentage to be the percentage of love between the 2 programmers.
+You are working as a Love Guru/Astrologer (and a part time data analyst). Your clients come and ask you their compatibility with some prospective partners.
+
+You bunked your classes at the Indian Institute of Astrological Science, not that attending them would have made a difference. But you did a data analysis course at Coursera and know how to convert the characters into Binary.
+
+So, you have come up with the following ~~scam~~ scheme. You take both their names and convert it to binary. Then, you predict their compatibility by comparing the percentage similarity between the 2 binaries.
+
+
+(b) You later coded this calculator and deployed it on a website. A multi-national company loved your ideas and paid you $10 million to acquire the model. Now, the company plans to create a simple love-letter based on your model's compatibility score.
+
+You now have a job in the same company and you need to build this model which takes the compatibility score and accordingly designs a love letter with loving emojis, quotes, etc. (Remember more the compatibility score, more romantic the letter it would be.)
 
 ### Input
 
