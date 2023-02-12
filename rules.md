@@ -1,6 +1,6 @@
 # Rules
 
-1. The event is **3 hours** long on **14th February, 9pm - 12pm**. It has been a tradition to increase the time limit later, but this is the official time for now.
+1. The event is **3 hours** long on **13th February, 9pm - 12pm**. It has been a tradition to increase the time limit later, but this is the official time for now.
 2. Team of 2 members.
 3. You may use any language of your choice. You may also use different languages for different questions. But you should know that questions were made with Python in mind.
 4. You may **not** use any packages not listed below. In case you feel that another library is absolutely necessary, bring it to our attention. Decision will be final and binding. Basically, only math related packages, plotting packages, String related packages and of-course standard libraries are allowed. The point of the Hackathon is to evaluate on the basis of logic, not on how well you can look it up on the internet.
