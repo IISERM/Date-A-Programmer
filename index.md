@@ -60,7 +60,7 @@ You now have a job in the same company and you need to build this model which ta
 
 ### Output
 
-The percentage of love between them. And a short lovely message for them.
+The percentage of love between them. And the love letter.
 
 <hr color="black">
 
@@ -120,7 +120,7 @@ Compatibility
 
 **The team that solves this first gets a prize.**
 
-You want to gift a necklace to your special someone. You have 18 pearls, 6 blue, 6 green and 6 red. Find the total number of unique necklaces that you can make.
+You want to gift a necklace to your special someone. You have 18 pearls, 6 blue, 6 green and 6 red. Find the total number of unique necklaces that you can make. Final answer is must for the prize. Submitting the code is not enough, though necessary.
 
 ### Input
 
