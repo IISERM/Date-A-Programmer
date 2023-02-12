@@ -120,7 +120,7 @@ Compatibility
 
 **The team that solves this first gets a prize.**
 
-You want to gift a necklace to your special someone. You have 12 pearls, 6 blue and 6 red. Find the total number of unique necklaces that you can make.
+You want to gift a necklace to your special someone. You have 18 pearls, 6 blue, 6 green and 6 red. Find the total number of unique necklaces that you can make.
 
 ### Input
 
