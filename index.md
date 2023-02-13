@@ -65,6 +65,7 @@ The percentage of love between them. And the love letter.
 <hr color="black">
 
 ## Question 3) Draw a heart [50 Marks]
+
 It's Valentine week and you (as a biology major) have to plot a 2D heart in Matplotlib to impress your valentine.
 
 Draw a heart using just the character `*`. Take an input `n` from the user, which is a measure of the size of the heart, say, the number of rows. You are free to decide how you do it, whether you draw a filled one, or a hollow one. The following is an example-
@@ -92,12 +93,14 @@ A heart printed on screen
 
 <hr color="black">
 
-(b) But you came to know that your valentine (being a data minor nerd) feels like 2D heart is for Nibba-Nibbi and now you need to upgrade your plot into a 3-D heart (can't buy gifts kyuki INSPIRE nhi milta).
+(b) But your valentine (being a physics major and data science minor) feels like 2D heart is for Nibba-Nibbi and now you need to upgrade your plot into a 3-D heart (can't buy gifts kyuki INSPIRE nhi milta).
+
 ### Input
 
 No input for this part
 
 ### Output
+
 A 3D heart printed on screen
 
 <p>
