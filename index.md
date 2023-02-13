@@ -132,18 +132,18 @@ You are making a Tinder app, where you want to calculate the compatibility based
 1. Each partner rates the genre of the movie. 
 2. Their compatibility is calculated in the following manner-
 
-```math
-   n = (\beta_1 \times x1 + \beta_2 \times x2 + \beta_3 \times x3)/\beta_4
-```
+$$n = (\beta_1 \times x1 + \beta_2 \times x2 + \beta_3 \times x3)$$
+
 
 $$x_i$$ is the square of the difference between the ratings. 
 
-```math
-   compatibility = \beta_5/(1+e^n)
-```
+$$\text{Compatibility} = \beta_4/(1+e^n)$$
+
 Fit the model using the data to learn the given parameter. 
 
-Just in case you are wondering, what if $$\beta_5$$ greater than 1 and the compatibility overshoots- supercompatibility is a thing.
+Just in case you are wondering, what if $$\beta_4$$ greater than 1 and the compatibility overshoots- supercompatibility is a thing.
+
+**You are not allowed to use any optimizer from any library, say scipy's curve_fit() or numpy's polyfit()**
 
 ### Input
 
