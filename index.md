@@ -93,8 +93,12 @@ A heart printed on screen
 
 <hr color="black">
 
-(b) But your valentine (being a physics major and data science minor) feels like 2D heart is for Nibba-Nibbi and now you need to upgrade your plot into a 3-D heart (can't buy gifts kyuki INSPIRE nhi milta).
+(b) But you came to know that your valentine (being a data minor nerd) feels like 2D heart is for Nibba-Nibbi and now you need to upgrade your plot into a 3-D heart (can't buy gifts kyuki INSPIRE nhi milta).
 
+Equation of the heart:  
+```math
+ Heart(x,y,z) = (x^2 + (9/4)(y^2) + z^2 -1)^3 - (x^2)(z^3) -(9/200)(y^2)(z^3) 
+```
 ### Input
 
 No input for this part
@@ -105,7 +109,7 @@ A 3D heart printed on screen
 
 <p>
   <b>Example!!</b><br><br>
-  <img src="3D-heart.png" width="400" height="400">
+  <img src="3D-heart.png" width="450" height="400">
 </p>
 
 <hr color="black">
@@ -125,11 +129,26 @@ Write a function `decrypt(encrypted_message, key)` that takes the encrypted mess
 
 ## Question 5) Movie Matching [60 Marks]
 
+You are making a Tinder app, where you want to calculate the compatibility based on the difference between the rating each partner give in movie genre. 
 
+(Remember more the difference, less the compatibility). 
+You found a revelant dataset of the movie ratings of three genre (say comedy, romance and thriller).
+Step1: You squared the individual genre differences.
+Step2: And then add them up (call it `n`) after assigning the weights accordingly.
 
+```math
+   n = (\beta_1 \times x1 + \beta_2 \times x2 + \beta_3 \times x3)/\beta_4
+```
+
+Step3: You imply the given function to restrict the compatibility range within (0,1).
+
+```math
+   compatibility = \beta_5/(1+e^n)
+```
+Fit the model using the data to learn the given parameter.
 ### Input
 
-Rating of movie genres by both partners.
+Use the given CSV.
 
 ### Output
 
