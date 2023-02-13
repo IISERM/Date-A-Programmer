@@ -93,6 +93,11 @@ A heart printed on screen
 <hr color="black">
 
 (b) But you came to know that your valentine (being a data minor nerd) feels like 2D heart is for Nibba-Nibbi and now you need to upgrade your plot into a 3-D heart (can't buy gifts kyuki INSPIRE nhi milta).
+
+Equation of the heart:  
+```math
+ Heart(x,y,z) = (x^2 + (9/4)(y^2) + z^2 -1)^3 - (x^2)(z^3) -(9/200)(y^2)(z^3) 
+```
 ### Input
 
 No input for this part
