@@ -43,7 +43,7 @@ Rose Day
 
 ## Question 2) Love Calculator [30 Marks]
 
-You are working as a Love Guru/Astrologer (and a part time data analyst). Your clients come and ask you their compatibility with some prospective partners.
+a) You are working as a Love Guru/Astrologer (and a part time data analyst). Your clients come and ask you their compatibility with some prospective partners.
 
 You bunked your classes at the Indian Institute of Astrological Science, not that attending them would have made a difference. But you did a data analysis course at Coursera and know how to convert the characters into Binary.
 
@@ -66,7 +66,7 @@ The percentage of love between them. And the love letter.
 
 ## Question 3) Draw a heart [50 Marks]
 
-It's Valentine week and you (as a biology major) have to plot a 2D heart in Matplotlib to impress your valentine.
+a) It's Valentine week and you (as a biology major) have to plot a 2D heart to impress your valentine.
 
 Draw a heart using just the character `*`. Take an input `n` from the user, which is a measure of the size of the heart, say, the number of rows. You are free to decide how you do it, whether you draw a filled one, or a hollow one. The following is an example-
 
@@ -91,9 +91,7 @@ For n = 8
 
 A heart printed on screen
 
-<hr color="black">
-
-(b) But you came to know that your valentine (being a data minor nerd) feels like 2D heart is for Nibba-Nibbi and now you need to upgrade your plot into a 3-D heart (can't buy gifts kyuki INSPIRE nhi milta).
+(b) But your valentine (being a physics major and data science minor nerd) feels like 2D heart is for Nibba-Nibbi and now you need to upgrade your plot into a 3-D heart (can't buy gifts kyuki INSPIRE nhi milta).
 
 Equation of the heart:  
 ```math
@@ -129,26 +127,25 @@ Write a function `decrypt(encrypted_message, key)` that takes the encrypted mess
 
 ## Question 5) Movie Matching [60 Marks]
 
-You are making a Tinder app, where you want to calculate the compatibility based on the difference between the rating each partner give in movie genre. 
+You are making a Tinder app, where you want to calculate the compatibility based on the difference between the rating each partner gives to movie genres. The following model has been proposed for the compatibility (which is measured through a survey of couples)-
 
-(Remember more the difference, less the compatibility). 
-You found a revelant dataset of the movie ratings of three genre (say comedy, romance and thriller).
-Step1: You squared the individual genre differences.
-Step2: And then add them up (call it `n`) after assigning the weights accordingly.
+1. Each partner rates the genre of the movie. 
+2. Their compatibility is calculated in the following manner-
 
 ```math
    n = (\beta_1 \times x1 + \beta_2 \times x2 + \beta_3 \times x3)/\beta_4
 ```
 
-Step3: You imply the given function to restrict the compatibility range within (0,1).
-
 ```math
    compatibility = \beta_5/(1+e^n)
 ```
-Fit the model using the data to learn the given parameter.
+Fit the model using the data to learn the given parameter. 
+
+Just in case you are wondering, what if $$\beta_5$$ greater than 1 and the compatibility overshoots- supercompatibility is a thing.
+
 ### Input
 
-Use the given CSV.
+Use the given [CSV](./data_movie_genre.csv)
 
 ### Output
 
