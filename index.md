@@ -15,7 +15,7 @@
 
 ## Question 1) Valentine's week  [20 Marks]
 
-You task is to take a date from the user that lies in the Valentine's week and return the name of the day that falls on it. The following are the anticipated date formats-
+Your task is to take a date from the user that lies in the Valentine's week and return the name of the day that falls on it. The following are the anticipated date formats-
 
 ```
 07/02/2023
