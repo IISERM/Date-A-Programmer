@@ -98,6 +98,11 @@ No input for this part
 ### Output
 A 3D heart printed on screen
 
+<p>
+  <b>Example!!</b><br><br>
+  <img src="3D-heart.png" width="400" height="400">
+</p>
+
 <hr color="black">
 
 
