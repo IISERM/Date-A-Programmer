@@ -127,11 +127,26 @@ Write a function `decrypt(encrypted_message, key)` that takes the encrypted mess
 
 ## Question 5) Movie Matching [60 Marks]
 
+You are making a Tinder app, where you want to calculate the compatibility based on the difference between the rating each partner give in movie genre. 
 
+(Remember more the difference, less the compatibility). 
+You found a revelant dataset of the movie ratings of three genre (say comedy, romance and thriller).
+Step1: You squared the individual genre differences.
+Step2: And then add them up (call it `n`) after assigning the weights accordingly.
 
+```math
+   n = (\beta_1 \times x1 + \beta_2 \times x2 + \beta_3 \times x3)/\beta_4
+```
+
+Step3: You imply the given function to restrict the compatibility range within (0,1).
+
+```math
+   compatibility = \beta_5/(1+e^n)
+```
+Fit the model using the data to learn the given parameter.
 ### Input
 
-Rating of movie genres by both partners.
+Use the given CSV.
 
 ### Output
 
