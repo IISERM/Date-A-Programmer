@@ -136,6 +136,8 @@ You are making a Tinder app, where you want to calculate the compatibility based
    n = (\beta_1 \times x1 + \beta_2 \times x2 + \beta_3 \times x3)/\beta_4
 ```
 
+$$x_i$$ is the square of the difference between the ratings. 
+
 ```math
    compatibility = \beta_5/(1+e^n)
 ```
