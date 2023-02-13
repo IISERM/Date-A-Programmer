@@ -90,6 +90,8 @@ For n = 8
 
 A heart printed on screen
 
+<hr color="black">
+
 (b) But you came to know that your valentine (being a data minor nerd) feels like 2D heart is for Nibba-Nibbi and now you need to upgrade your plot into a 3-D heart (can't buy gifts kyuki INSPIRE nhi milta).
 ### Input
 
